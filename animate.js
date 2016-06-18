@@ -1,28 +1,23 @@
-$.fn.simpleani = function (animation, delay) {
+(function ( $ ) {
+
+    $.fn.animate = function( options ) {
+
+        // This is the easiest way to have default options.
+        var settings = $.extend({
+            // These are the defaults.
+            animation: "poster",
+            duration: 2
+        }, options );
 
 
-    var animationName = animation;
+        var durationcss = settings.duration + "s";
 
-
-    $(this).addClass("animated " + animation);
-
-
-};
-
-
-$(document).ready(function () {
-
-    $("#img").simpleani("fallDown");
-
-
-    window.setInterval(function () {
-        $("#img2").simpleani("bounce");
-    }, 1000);
-
-    window.setInterval(function () {
-        $("#img3").simpleani("poster");
-    }, 2000);
+        $(this).addClass("animated " + settings.animation);
+        $(this).css("-webkit-animation-duration", durationcss);
+        $(this).css("animation-duration", durationcss);
 
 
 
-});
+    };
+
+}( jQuery ));
