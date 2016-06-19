@@ -23,10 +23,8 @@
 
 
 3. Use the jQuery selector to select the object where you want the animation and that's it!
-
-  ```javascript
-    $("#img").animate();
-
+```javascript
+$("#img").animate();
 ```
 
 4. Finally, you can choose from different animations:
@@ -37,17 +35,17 @@
   * `elastic`
 
 ```javascript
-    $("#img").animate({
-        animation: "elastic"
-    });
+$("#img").animate({
+    animation: "elastic"
+});
 ```
 
 5. Make it your own! Choose your animation duration and make it loop!
 
 ```javascript
-    $("#img").animate({
-        animation: "elastic",
-        infinite: true,
-        duration: 5
-    });
+$("#img").animate({
+    animation: "elastic",
+    infinite: true,
+    duration: 5
+});
 ```
