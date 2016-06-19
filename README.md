@@ -33,6 +33,7 @@ $("#img").animate();
   * `bounce`
   * `fallDown`
   * `elastic`
+
   ```javascript
 $("#img").animate({
     animation: "elastic"
