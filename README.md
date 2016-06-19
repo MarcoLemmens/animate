@@ -3,6 +3,8 @@
 
 `animate.js` is a simpje jQuery plugin that lets you do simple animations with custom preferences.
 
+[Demo](http://marcolemmens.com/animate.js)
+
 ##Usage
 1. Include the stylesheet on your document's `<head>`
 
