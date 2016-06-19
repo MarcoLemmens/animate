@@ -19,7 +19,7 @@
             window.setInterval(function () {
                 $("#img2").animate({
                             animation: "bounce",
-                            duration: 5
+                            duration: 5,
                         }
                 );
 
@@ -27,13 +27,16 @@
 
             window.setInterval(function () {
                 $("#img3").animate({
-                            animation: "poster",
-                            duration: 1
-                        }
-                );
-
+                    animation: "elastic",
+                    infinite: true,
+                    duration: 1
+                });
             }, 2000);
 
+            window.setInterval(function () {
+                $("#img4").animate({
+                });
+            }, 3000);
 
 
 
@@ -41,7 +44,7 @@
     </script>
 
     <style>
-        .animation{
+        .animation {
             margin-bottom: 50px;
             margin-right: 80px;
             float: left;
@@ -52,21 +55,28 @@
 <body>
 
 
-
 <div class="animation">
-<img id="img" src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300" alt="">
+    <img id="img"
+         src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300"
+         alt="">
 </div>
 
 <div class="animation">
-    <img id="img2" src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300" alt="">
+    <img id="img2"
+         src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300"
+         alt="">
 </div>
 
 <div class="animation">
-    <img id="img3" src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300" alt="">
+    <img id="img3"
+         src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300"
+         alt="">
 </div>
 
 <div class="animation">
-    <img id="img4" src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300" alt="">
+    <img id="img4"
+         src="https://lh3.googleusercontent.com/Q5k2MFFsTQdLpzJzFl9G3-FIc4AVtQYsB5rnWoBzkymG-M7BS5voVwcEjoYo8LZHiDI=w300"
+         alt="">
 </div>
 
 
